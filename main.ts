@@ -525,7 +525,7 @@ for (const [cx, cy, dx, dy] of [
 }
 // hologram ring overlapping the bottom-right corner
 {
-  const hx = PB.x + PB.w - 4, hy = PB.y + PB.h - 10;
+  const hx = PB.x + PB.w - 28, hy = PB.y + PB.h - 28;
   circleStroke(hx, hy, 24, 2.2, C("#37b6c9"), 0.45, 0.3, 3.6);
   circleStroke(hx, hy, 24, 2.2, C("#d35fa0"), 0.45, 3.4, 6.4);
   circleStroke(hx, hy, 18.5, 1.4, C("#c9a227"), 0.5, 1.2, 5.2);
@@ -580,8 +580,7 @@ drawText("3", 30, 750, 10, FRAME, {});
 drawText("VISAS", 768, 66, 15, NAVY, { align: "center", ls: 4, bold: true });
 line(566, 60, 692, 60, 0.9, RULE, 0.9);
 line(844, 60, 970, 60, 0.9, RULE, 0.9);
-// pale watermark emblem in the middle of the page
-drawEmblem(768, 408, 118, NAVY, 0.05, 2.4);
+
 
 interface StampLine {
   text: string;
